@@ -31,6 +31,8 @@ class GalleryScreen2 extends StatelessWidget {
                   builder: (context) => DetailScreen2(
                     imagePath: GalleryData2.imagePaths[index],
                     caption: GalleryData2.imageCaptions[index],
+                    detailTexts: GalleryData2.detailTexts[
+                        index], // Bekomme Text unter dem Bild nicht angezeigt
                   ),
                 ),
               );

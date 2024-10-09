@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../gallery/screens/gallery_screen.dart';
+import '../gallery/screens/gallery_screen2.dart';
 
 class AboutMeScreen extends StatelessWidget {
   const AboutMeScreen({super.key});
@@ -49,7 +50,11 @@ class AboutMeScreen extends StatelessWidget {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.photo_album),
-            label: "Bilder",
+            label: "Gallerie 1",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.browse_gallery),
+            label: "Gallerie 2",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
@@ -62,6 +67,11 @@ class AboutMeScreen extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const GalleryScreen()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const GalleryScreen2()),
             );
           }
         },
