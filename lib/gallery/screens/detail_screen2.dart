@@ -25,7 +25,7 @@ class DetailScreen2 extends StatelessWidget {
             children: [
               Image.asset(imagePath, fit: BoxFit.cover),
               const SizedBox(height: 16),
-              const Text(
+              Text(
                 caption,
                 textAlign: TextAlign.center,
                 style: const TextStyle(fontSize: 16, color: Colors.white),
