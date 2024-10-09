@@ -29,7 +29,13 @@ class DetailScreen2 extends StatelessWidget {
               Text(
                 caption,
                 textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 20, color: Colors.amber),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                detailTexts, // Den spezifischen Text anzeigen
                 style: const TextStyle(fontSize: 16, color: Colors.white),
+                textAlign: TextAlign.center,
               ),
             ],
           ),
