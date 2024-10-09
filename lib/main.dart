@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
+import 'gallery/screens/gallery_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MaterialApp(
+      title: "Gallery App",
+      theme: ThemeData(
+        scaffoldBackgroundColor:
+            Colors.black, // Hintergrundfarbe für die gesamte App
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black, // AppBar-Hintergrundfarbe
+          foregroundColor: Colors.amber, // Textfarbe in der AppBar
         ),
       ),
+      home: const GalleryScreen(),
     );
   }
 }

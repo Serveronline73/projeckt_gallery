@@ -1,6 +1,6 @@
 name: projeckt_gallery
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -17,3 +17,18 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - asset/car1.jpeg
+    - asset/car2.jpeg
+    - asset/car3.jpeg
+    - asset/car4.jpeg
+    - asset/car5.jpeg
+    - asset/car6.jpeg
+    - asset/soccer.jpeg
+    - asset/basketball_1.jpeg
+    - asset/basketball_2.jpeg
+    - asset/bike.jpeg
+    - asset/running.jpeg
+    - asset/tennis_1.jpeg
+    - asset/tennis_2.jpeg
+    - asset/kaya.jpeg
